@@ -1,4 +1,4 @@
-package com.example.creationownviewtest
+package com.example.creationownviewtest.activityOne
 
 import android.content.Context
 import android.content.res.ColorStateList
@@ -9,6 +9,7 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.example.creationownviewtest.R
 import com.example.creationownviewtest.databinding.CastComponentFromBaseViewBinding
 
 enum class BottomButtonAction {

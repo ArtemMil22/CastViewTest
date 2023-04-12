@@ -1,4 +1,4 @@
-package com.example.creationownviewtest
+package com.example.creationownviewtest.activityOne
 
 import android.os.Build
 import android.os.Bundle

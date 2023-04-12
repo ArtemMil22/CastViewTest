@@ -10,7 +10,7 @@
         android:id="@+id/negative_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Negative"
+        android:text="@string/negative"
         android:textAllCaps="false"
         android:backgroundTint="@color/white"
         android:textColor="@color/black"
@@ -33,7 +33,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="Positive"
+        android:text="@string/positive"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@+id/space"/>
