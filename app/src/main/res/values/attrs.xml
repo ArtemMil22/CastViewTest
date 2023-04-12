@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CastComponentInFromBaseView">
+
+        <attr name="buttonPositiveButtonText" format="string"/>
+        <attr name="buttonPositiveBackgroundColor" format="color"/>
+        
+        <attr name="buttonNegativeBackgroundColor" format="color"/>
+        <attr name="buttonNegativeButtonText" format="string"/>
+        
+        <attr name="buttonProgressMode" format="boolean"/>
+    </declare-styleable>
+
+    <attr name="bottomButtonStyle" format="reference"/>
+
+
+</resources>
