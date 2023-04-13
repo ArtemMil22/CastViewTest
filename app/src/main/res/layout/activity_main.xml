@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".activityOne.MainActivity">
+    tools:context=".screenTwo.MainActivity">
 
    <TextView
        android:id="@+id/textView2"
@@ -39,7 +39,7 @@
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toStartOf="parent" />
 
-   <com.example.creationownviewtest.activityOne.CastComponentInFromBaseView
+   <com.example.creationownviewtest.screenTwo.CastComponentInFromBaseView
        android:id="@+id/castButton"
        android:layout_width="0dp"
        android:layout_height="wrap_content"

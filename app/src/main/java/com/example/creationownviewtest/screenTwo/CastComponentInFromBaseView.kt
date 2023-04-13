@@ -1,4 +1,4 @@
-package com.example.creationownviewtest.activityOne
+package com.example.creationownviewtest.screenTwo
 
 import android.content.Context
 import android.content.res.ColorStateList
@@ -18,6 +18,7 @@ enum class BottomButtonAction {
 
 typealias OnBottomButtonsActionListener = (BottomButtonAction) -> Unit
 
+//есть макетный файл констрейнт поетому от него и наследуемся
 class CastComponentInFromBaseView(
     context: Context,
     attrs: AttributeSet?,
