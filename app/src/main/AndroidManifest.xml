@@ -12,10 +12,10 @@
         android:theme="@style/Theme.CreationOwnViewTest"
         tools:targetApi="31">
         <activity
-            android:name=".screenTwo.MainActivity"
+            android:name=".screenTwoComponentView.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivityTwo"
+            android:name=".screenOneCastView.MainActivityTwo"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

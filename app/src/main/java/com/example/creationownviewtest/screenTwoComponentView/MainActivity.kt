@@ -1,4 +1,4 @@
-package com.example.creationownviewtest.screenTwo
+package com.example.creationownviewtest.screenTwoComponentView
 
 import android.os.Build
 import android.os.Bundle

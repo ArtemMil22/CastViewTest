@@ -1,4 +1,4 @@
-package com.example.creationownviewtest
+package com.example.creationownviewtest.screenOneCastView
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -11,10 +11,13 @@ import android.os.Parcel
 import android.os.Parcelable
 import android.util.AttributeSet
 import android.util.TypedValue
-import android.view.GestureDetector
 import android.view.KeyEvent
 import android.view.MotionEvent
 import android.view.View
+import com.example.creationownviewtest.Cell
+import com.example.creationownviewtest.OnFieldChangedListener
+import com.example.creationownviewtest.R
+import com.example.creationownviewtest.TickTacToeField
 import java.lang.Integer.max
 import kotlin.math.floor
 import kotlin.properties.Delegates
@@ -87,11 +90,9 @@ class TicTakToeView(
             initDefaultColors()
         }
         initPaints()
-
         // здесь мы можем инициализировать некоторые данные для
         // предварительного просмотра компонента в Android Studio.
         if (isInEditMode) {
-
             tickTacToeField = TickTacToeField(8, 6)
             tickTacToeField?.setCell(1, 2, Cell.PLAYER_1)
             tickTacToeField?.setCell(6, 5, Cell.PLAYER_2)
@@ -99,9 +100,7 @@ class TicTakToeView(
             tickTacToeField?.setCell(5, 4, Cell.PLAYER_2)
             tickTacToeField?.setCell(2, 3, Cell.PLAYER_1)
             tickTacToeField?.setCell(4, 5, Cell.PLAYER_2)
-
         }
-
         // заставить наше view работать на устройствах без сенсорного экрана
         isFocusable = true
         isClickable = true
@@ -294,7 +293,7 @@ class TicTakToeView(
         }
     }
 
-    // пол
+    // для пользователя с кнопками
     override fun performClick(): Boolean {
         super.performClick()
         val field = this.tickTacToeField ?: return false
@@ -302,6 +301,7 @@ class TicTakToeView(
         val column = currentColumn
         if (row >= 0 && column >= 0 && row < field.rows && column < field.columns) {
             actionListener?.invoke(row, column, field)
+            //actionListener?.let { it(row, column, field) }
             return true
         }
         return false

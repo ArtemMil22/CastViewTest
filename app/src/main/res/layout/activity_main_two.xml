@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivityTwo">
+    tools:context=".screenOneCastView.MainActivityTwo">
 
-    <com.example.creationownviewtest.TicTakToeView
+    <com.example.creationownviewtest.screenOneCastView.TicTakToeView
         android:id="@+id/componentTicTakToeView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,23 +15,23 @@
 
     <Button
         android:id="@+id/buttonRandomSize"
-        android:layout_width="110dp"
+        android:layout_width="130dp"
         android:layout_height="80dp"
-        android:layout_marginStart="165dp"
+        android:layout_marginStart="145dp"
         android:layout_marginTop="600dp"
-        android:backgroundTint="#4CAF50"
+        android:backgroundTint="@color/greenfunny"
         android:fontFamily="casual"
-        android:text="random SIZE"
+        android:text="@string/update_field"
         android:textSize="18sp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
+        android:layout_marginStart="55dp"
         android:layout_marginTop="680dp"
-        android:backgroundTint="#3F51B5"
+        android:backgroundTint="@color/bluedark"
         android:fontFamily="@font/aclonica"
-        android:text="Перейти на следующий экран" />
+        android:text="@string/to_next_screen" />
 
 </FrameLayout>
