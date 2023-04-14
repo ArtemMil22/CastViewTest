@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CreationOwnViewTest</string>
+    <string name="negative">Negative</string>
+    <string name="positive">Positive</string>
+    <string name="ComponentFromBaseView"> Компонент на базе уже существующих представлений</string>
+    <string name="LayoutInLayout"> Макет в макете</string>
+    <string name="update_field">UPDATE field</string>
+    <string name="to_next_screen">TO NEXT SCREEN, there my test</string>
 </resources>

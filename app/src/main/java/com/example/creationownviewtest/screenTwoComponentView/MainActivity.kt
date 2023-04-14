@@ -1,4 +1,4 @@
-package com.example.creationownviewtest
+package com.example.creationownviewtest.screenTwoComponentView
 
 import android.os.Build
 import android.os.Bundle
@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         with(binding.includeInmain) {
             negativeButton.text = "Cancel"

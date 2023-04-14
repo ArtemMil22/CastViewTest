@@ -1,4 +1,4 @@
-package com.example.creationownviewtest
+package com.example.creationownviewtest.screenTwoComponentView
 
 import android.content.Context
 import android.content.res.ColorStateList
@@ -9,6 +9,7 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.example.creationownviewtest.R
 import com.example.creationownviewtest.databinding.CastComponentFromBaseViewBinding
 
 enum class BottomButtonAction {
@@ -17,6 +18,7 @@ enum class BottomButtonAction {
 
 typealias OnBottomButtonsActionListener = (BottomButtonAction) -> Unit
 
+//есть макетный файл констрейнт поетому от него и наследуемся
 class CastComponentInFromBaseView(
     context: Context,
     attrs: AttributeSet?,

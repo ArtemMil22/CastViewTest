@@ -17,6 +17,8 @@
 
         <item name="bottomButtonStyle">@style/DefaultMyStyle</item>
 
+        <item name="ticTacToeFieldStyle">@style/GlobalTicTacToeFieldStyle</item>
+
     </style>
 
     <style name="MyStyleButton" parent="Widget.MaterialComponents.Button">
@@ -25,6 +27,16 @@
 
     <style name="DefaultMyStyle">
         <item name="buttonPositiveBackgroundColor">#880000</item>
+    </style>
+
+    <style name="DefaultTicTacToeFieldStyle">
+        <item name="player1Color">#008800</item>
+        <item name="player2Color">#E91E63</item>
+        <item name="gridColor">#dfdfdf</item>
+    </style>
+
+    <style name="GlobalTicTacToeFieldStyle" parent="DefaultTicTacToeFieldStyle">
+        <item name="player1Color">#03A9F4</item>
     </style>
 
 </resources>

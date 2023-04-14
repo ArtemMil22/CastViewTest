@@ -4,27 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/background"
+    tools:context=".screenTwoComponentView.MainActivity">
+
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="10dp"
+       android:text="@string/LayoutInLayout"
+       android:textColor="@color/black"
+       app:layout_constraintBottom_toTopOf="@+id/includeInmain"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent" />
+
+   <TextView
+       android:id="@+id/textView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="10dp"
+       android:text="@string/ComponentFromBaseView"
+       android:textColor="@color/black"
+       app:layout_constraintBottom_toTopOf="@+id/castButton"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent" />
 
    <include
        android:id="@+id/includeInmain"
        layout="@layout/multiple_buttons_in_one_view"
        android:layout_width="0dp"
        android:layout_height="wrap_content"
+       android:layout_marginBottom="200dp"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toStartOf="parent" />
 
-   <com.example.creationownviewtest.CastComponentInFromBaseView
+   <com.example.creationownviewtest.screenTwoComponentView.CastComponentInFromBaseView
        android:id="@+id/castButton"
        android:layout_width="0dp"
        android:layout_height="wrap_content"
-       app:buttonNegativeButtonText="Cancell"
-       app:buttonPositiveBackgroundColor="@color/purple_200"
+       android:layout_marginTop="200dp"
        app:buttonNegativeBackgroundColor="@color/teal_200"
-       app:buttonPositiveButtonText="Okk"
+       app:buttonNegativeButtonText="Cancel"
+       app:buttonPositiveBackgroundColor="@color/purple_200"
+       app:buttonPositiveButtonText="Ok"
        app:buttonProgressMode="false"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
